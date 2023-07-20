@@ -1,6 +1,6 @@
 ## Badges
 
-[![License](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/) [![Python 3.1](https://img.shields.io/badge/python-3.1-blue.svg)](https://www.python.org/downloads/release/python-300/) [![PyPI - Downloads]()]()
+[![License](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/) [![Python 3.1](https://img.shields.io/badge/python-3.1-blue.svg)](https://www.python.org/downloads/release/python-300/) [![PyPI - Downloads](SMTH)]()
 
 <img src="crawley-lite.jpg" width="500">
 
