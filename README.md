@@ -87,7 +87,7 @@ python3 crawley.py --query "site:*.socrata.com \"Powered by Socrata\" -site:socr
 
 ## 2. Validating the platforms
 
-See _config-example.json_ and save your adjusted version as config.json for defining the validation rules. The tool requests HTML for each search result and then tries to match it with the validation snippets. After having done enough queries and defining validation rules, run the following command to validate the results:
+See _config-example.json_ and save your adjusted version as config.json to define the validation rules. The tool requests HTML for each search result and then tries to match it with the validation snippets. After having done enough queries and defining validation rules, run the following command to validate the results:
 
 ```bash
 python3 crawley.py --validate
