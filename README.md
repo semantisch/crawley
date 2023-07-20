@@ -111,7 +111,7 @@ Contributions are welcome. Please open an issue or submit a pull request if you 
 
 ## License
 
-The tool is avaiable under the [CC-BY 4.0 license](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
+The tool is avaiable under the [CC-BY 4.0 license](http://creativecommons.org/licenses/by/4.0/)
 
 
 ## Authors
