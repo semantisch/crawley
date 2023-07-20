@@ -1,19 +1,19 @@
 ## Badges
 
-[![License](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/) [![Python 3.1](https://img.shields.io/badge/python-3.1-blue.svg)](https://www.python.org/downloads/release/python-300/) [![PyPI - Downloads](https://img.shields.io/pypi/dd/crawley-lite)]()
+[![License](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/) [![Python 3.1](https://img.shields.io/badge/python-3.1-blue.svg)](https://www.python.org/downloads/release/python-300/) [![PyPI - Downloads]()]()
 
 <img src="crawley-lite.jpg" width="500">
 
-# Crawley-Lite: A tool for basic web crawling
+# Crawley: A tool for basic web crawling
 
-Crawley-Lite is a command-line tool engineered in Python, that facilitates the process of web platform discovery. It enables users to customize search queries and validate search results, with the overarching goal of identifying websites that are underpinned by specific technological platforms (i.e. Semantic Wikis, Open Data Portals, Wordpress sites). 
+Crawley is a command-line tool engineered in Python, that facilitates the process of web platform discovery. It enables users to customize search queries and validate search results, with the overarching goal of identifying websites that are underpinned by specific technological platforms (i.e. Semantic Wikis, Open Data Portals, Wordpress sites). 
 
 ## Features
 
 - Cross-Platform Search Engine Crawling: The tool is equipped with the ability to automate the crawling of popular search engines (Google, Bing, Yandex, Yahoo, DuckDuckGo, Baidu and Naver). 
-- Rule-Based HTML Parsing: Crawley-Lite can parse HTML content derived from search results, facilitating identification and confirmation of underlying technical platforms via the application of custom validation rules.
+- Rule-Based HTML Parsing: Crawley can parse HTML content derived from search results, facilitating identification and confirmation of underlying technical platforms via the application of custom validation rules.
 - Hyperlink Traversal and Validation: The tool is capable of hyperlink traversal, following and validating underlying platforms for further URLs extracted from the initial query search results.
-- Result Categorization: The output from Crawley-Lite is classified acc. to the technology and applicable markers. 
+- Result Categorization: The output from Crawley is classified acc. to the technology and applicable markers. 
 
 ## Requirements
 
@@ -58,12 +58,12 @@ After each search, the tool prints the actual number of usable results returned 
 
 Google:
 ```bash
-python3 crawley-lite.py --query "QUERY" --engine Google --count 100  --offset 100
+python3 crawley.py --query "QUERY" --engine Google --count 100  --offset 100
 ```
 Notes: Optimal queries with Google inclide _exact match searches_ (terms in parentheses), _inurl:_ and _site:_ operators (https://ahrefs.com/blog/google-advanced-search-operators/) and exclusions of clear false positives through _-site:_. 
 
 ```bash
-python3 crawley-lite.py --query "site:*.socrata.com \"Powered by Socrata\" -site:socrata.com" --engine Google --count 100  --offset 0
+python3 crawley.py --query "site:*.socrata.com \"Powered by Socrata\" -site:socrata.com" --engine Google --count 100  --offset 0
 ```
 
 Google:
@@ -71,18 +71,18 @@ Google:
 The maximum number of results for Google is 100 (i.e. _count_ set to 100) and _offset_ is calculated in total results to be skipped (i.e. 0,100,200, ... if _count_ is set to 100).
 
 ```bash
-python3 crawley-lite.py --query "{QUERY}" --engine Google --count {COUNT}  --offset {OFFSET}
+python3 crawley.py --query "{QUERY}" --engine Google --count {COUNT}  --offset {OFFSET}
 ```
 Notes: Optimal queries with Google inclide _exact match searches_ (terms in parentheses), _inurl:_ and _site:_ operators (https://ahrefs.com/blog/google-advanced-search-operators/) and exclusions of clear false positives through _-site:_. 
 
 ```bash
-python3 crawley-lite.py --query "site:*.socrata.com \"Powered by Socrata\" -site:socrata.com" --engine Google --count 100  --offset 0
+python3 crawley.py --query "site:*.socrata.com \"Powered by Socrata\" -site:socrata.com" --engine Google --count 100  --offset 0
 ```
 
 The command to get the next page of results would be (_offset_ increased by 100):
 
 ```bash
-python3 crawley-lite.py --query "site:*.socrata.com \"Powered by Socrata\" -site:socrata.com" --engine Google --count 100  --offset 100
+python3 crawley.py --query "site:*.socrata.com \"Powered by Socrata\" -site:socrata.com" --engine Google --count 100  --offset 100
 ```
 
 ## 2. Validating the platforms
@@ -90,7 +90,7 @@ python3 crawley-lite.py --query "site:*.socrata.com \"Powered by Socrata\" -site
 See _config.json_ for defining the validation rules. The tool requests HTML for each search result and then tries to match it with the validation snippets. After having done enough queries and defining validation rules, run the following command to validate the results:
 
 ```bash
-python3 crawley-lite.py --validate
+python3 crawley.py --validate
 ```
 
 The validation results can be found in _./validatedSites.json_. The total number of validation hits for each platform will be printed in the console and can be found in  _./validatedReport.json_.
@@ -100,7 +100,7 @@ The validation results can be found in _./validatedSites.json_. The total number
 To request HTML from and validate links appearing in the HTML of initial results, use the following command.
 
 ```bash
-python3 crawley-lite.py --links
+python3 crawley.py --links
 ```
 
 This will update the results.
