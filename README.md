@@ -85,18 +85,9 @@ The command to get the next page of results would be (_offset_ increased by 100)
 python3 crawley-lite.py --query "site:*.socrata.com \"Powered by Socrata\" -site:socrata.com" --engine Google --count 100  --offset 100
 ```
 
-TODO
-
-Bing:
-Yandex:
-Yahoo:
-DuckDuckGo:
-Baidu:
-Naver:
-
 ## 2. Validating the platforms
 
-See _config.json_ for defining the validation rules (TODO explanation). The tool requests HTML for each search result and then tries to match it with the validation snippets. After having done enough queries and defining validation rules, run the following command to validate the results:
+See _config.json_ for defining the validation rules. The tool requests HTML for each search result and then tries to match it with the validation snippets. After having done enough queries and defining validation rules, run the following command to validate the results:
 
 ```bash
 python3 crawley-lite.py --validate
@@ -106,7 +97,7 @@ The validation results can be found in _./validatedSites.json_. The total number
 
 ## 3. Following links
 
-To request HTML from and validate links appearing in the HTML of initial results, use the following command. (TODO explanation how works)
+To request HTML from and validate links appearing in the HTML of initial results, use the following command.
 
 ```bash
 python3 crawley-lite.py --links
@@ -125,11 +116,8 @@ Blabla
 
 ## Authors
 
-- [Daniil Dobriy](https://github.com/semantisch) - (Institute for Data, Process and Knowledge Management - WU Vienna)
-
-*[Institute for Data, Process and Knowledge Management](https://www.wu.ac.at/en/dpkm/)*, *[Vienna University of Economics and Busioness](https://www.wu.ac.at)*.
+[ANONYMIZED]
 
 ## Acknowledgements
-- Martin Beno and Alexandra Hager
-- [Distributed Knowledge Graphs COST Action](https://cost-dkg.eu)
+- [ANONYMIZED]
 - [Diátaxis: A systematic framework for technical documentation authoring](https://diataxis.fr)
