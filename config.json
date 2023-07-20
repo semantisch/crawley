@@ -1,0 +1,61 @@
+{
+  "CKAN":
+    {
+      "search":
+        ["CKAN", "CKAN API", "Datensätze mit Anwendungen", "ckan 2.8.3", "ckan 2.8.10", "ckan 2.8.11", "ckan 2.9.2", "Powered by CKAN", "CKAN logo"],
+      "validate":
+        ["img/ckan.svg",
+        "<a href=\"http://docs.ckan.org/en/2.8/api/\">CKAN API</a>",
+        "<a href=\"http://docs.ckan.org/en/2.9/api/\">CKAN API</a>",
+        ">CKAN API</a>",
+        "<form id=\"ckan-dataset-search\"",
+        "<a id=\"ckan_de\"",
+        "<a id=\"ckan_en\"",
+        "header_od_ckan.en",
+        "/ckan/organization",
+        "ckan-footer-logo",
+        "wpckan_dataset",
+        "id='ckan_base-js'",
+        "<meta name=\"generator\" content=\"ckan",
+        "ckan.ico",
+        "href=\"/ckan/dataset",
+        "<span>Powered by</span>",
+        "alt=\"CKAN\"",
+        "alt=\"CKAN logo\"",
+        "href=\"/fanstatic/ckanext-harvest",
+        "href=\"/data/fanstatic/ckanext-scheming",
+        "href=\"/ckan/fanstatic/ckanext-geoview",
+        "href=\"/ckan/fanstatic/ckanext-harvest"
+        ]
+    },
+    "OpenDataSoft":
+      {
+        "search":
+          ["OpenDataSoft", "© OpenDataSoft", ".opendatasoft.com"],
+        "validate":
+          [
+            "BRAND_HOSTNAME: \"opendatasoft.com\"",
+            "ods.core.config",
+            "ods.minimal",
+            "ods.core.config",
+            "ods.core",
+            "ods.core.form.directives"
+          ]
+      },
+    "Socrata":
+      {
+        "search":
+          ["Socrata", "Powered by Socrata", "www.socrata.com", "socrata Zendesk"],
+        "validate":
+          [
+            "<!-- Start of socrata Zendesk Widget script -->",
+            "var socrata",
+            "window.socrata",
+            "<!-- \n            Powered by Socrata",
+            "<!-- Powered by Socrata",
+            "<!--Powered by Socrata",
+            "<!--\n  Powered by Socrata",
+            "www.socrata.com\n  -->"
+          ]
+      }
+}
